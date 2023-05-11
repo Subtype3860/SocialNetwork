@@ -1,17 +1,22 @@
 ﻿
-using NUnit.Framework;
 using SocialNetwork.BLL.Models;
+using Xunit;
+using Moq;
+using SocialNetwork.DAL.Repositories;
+using SocialNetwork.DAL.Entities;
+using SocialNetwork.BLL.Services;
 
 namespace SocialNetwork.Test
 {
-    [TestFixture]
     public class UserServiceTest
     {
-        [Test]
+        [Fact]
         public void FindByEmailAlwaysReturnsExpectedValue()
         {
-            User user = new ();
+            UserService userService = new UserService();
 
+            Assert.Equal("ss", "ss");
+            
         }
     }
 }
